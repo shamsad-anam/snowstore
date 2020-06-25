@@ -1,0 +1,18 @@
+//bootstrap ovverrides and customization
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid $color-primary;
+  background-color: #f4f4f4;
+}
+.card {
+  text-align: center;
+  transition: all 0.2s;
+}
+.card-title {
+  font-weight: bold;
+}
+
+.font-style-italic {
+  font-style: italic !important;
+}

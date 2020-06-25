@@ -1,0 +1,16 @@
+.best {
+  background-color: #f1f1f1;
+  padding-bottom: 50px;
+
+  @include respondMax(767px) {
+    & .card {
+      margin-bottom: 30px;
+    }
+  }
+  & .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2),
+      -2px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+}

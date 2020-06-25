@@ -1,0 +1,37 @@
+.new {
+  background-color: #f1f1f1;
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &__subtitle {
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    font-weight: bold;
+  }
+  &__price {
+    font-weight: bold;
+  }
+  & .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2),
+      -2px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .card {
+    // position: relative;
+    @include respondMax(991px) {
+      &:nth-of-type(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
+    @include respondMax(767px) {
+      max-width: 300px;
+      margin: auto;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

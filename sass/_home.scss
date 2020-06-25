@@ -1,0 +1,95 @@
+.nav-top {
+  border-bottom: 1px solid rgba($color-primary, 0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1111;
+
+  @include respondMax(415px) {
+    display: none;
+  }
+
+  & i {
+    color: $color-primary;
+  }
+  & .navbar {
+    padding: 0;
+  }
+  & .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+.nav-main {
+  margin-top: 30px;
+  @include respondMax(415px) {
+    margin-top: 0px;
+  }
+  line-height: 1.6rem;
+  & .navbar-brand {
+    font-size: 30px;
+    margin-right: 40px;
+  }
+  & .navbar-nav {
+    font-size: 16px;
+  }
+  & .nav-link {
+    margin-right: 10px;
+  }
+  &__group {
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  & .form-control {
+    height: 35px;
+    width: 300px;
+  }
+}
+
+.hero {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 0.8) 60%
+    ),
+    url("../img/hero.jpg");
+  @include bgCover();
+  height: 90vh;
+  &__title {
+    font-size: 60px;
+    font-weight: bold;
+    color: $color-primary;
+
+    @include respondMax(767px) {
+      font-size: 50px;
+    }
+
+    @include respondMax(575px) {
+      font-size: 40px;
+    }
+  }
+  &__subtitle,
+  &__text,
+  &__cta {
+    margin-left: 3px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  &__cta {
+    margin-top: 20px;
+  }
+  &__price {
+    font-weight: 600;
+    margin-right: 30px;
+  }
+}

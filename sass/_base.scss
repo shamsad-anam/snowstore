@@ -1,0 +1,33 @@
+// variables
+$color-primary: #325be4;
+$color-secondary: #9eb2f3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// html {
+//   font-size: 62.5%;
+// }
+
+// body {
+//   //   font-size: 1.6rem;
+// }
+
+.text--main,
+a,
+a:hover,
+a:active,
+a:visited {
+  color: $color-primary;
+}
+a:hover {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: rgb(196, 196, 196);
+  color: $color-primary;
+}
